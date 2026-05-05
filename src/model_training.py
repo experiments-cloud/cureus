@@ -19,7 +19,7 @@ import time
 import copy
 import argparse
 
-# Import custom dataset loader[cite: 2, 4]
+# Import custom dataset loader
 from dataset_loader import HAM10000Dataset, data_transforms
 
 def train_model(model, dataloaders, dataset_sizes, criterion, optimizer, device, num_epochs=5):
@@ -74,7 +74,7 @@ def train_model(model, dataloaders, dataset_sizes, criterion, optimizer, device,
 
     time_elapsed = time.time() - since
     print(f'Training complete in {time_elapsed // 60:.0f}m {time_elapsed % 60:.0f}s')
-    print(f'Best Validation Accuracy: {best_acc:4f}')
+    print(f'Best validation accuracy: {best_acc:4f}')
 
     model.load_state_dict(best_model_wts)
     return model
