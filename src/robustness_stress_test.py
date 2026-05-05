@@ -19,7 +19,7 @@ from PIL import Image, ImageEnhance, ImageFilter
 # Import custom dataset loader
 from dataset_loader import HAM10000Dataset, data_transforms
 
-# --- 1. Custom Degradation Classes[cite: 9, 10] ---
+# --- 1. Custom Degradation Classes ---
 
 class AddGaussianNoise(object):
     """Applies Gaussian noise directly to the image tensor to simulate sensor grain."""
@@ -71,7 +71,7 @@ degradation_pipelines = {
     ])
 }
 
-# --- 3. Evaluation Logic[cite: 9, 10] ---
+# --- 3. Evaluation Logic ---
 
 def evaluate_performance(model, dataloader, criterion, device):
     """Calculates loss and accuracy for a specific model and condition."""
