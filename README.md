@@ -5,8 +5,8 @@ This repository contains the source code for the study on AI vulnerability in sk
 ## Project Structure
 *   **`dataset_loader.py`**: Custom PyTorch Dataset class for HAM10000.
 *   **`model_training.py`**: Fine-tuning script for ResNet-50 and MobileNetV2.
-*   **`evaluacion_degradacion.py`**: Logic for simulating blur, noise, and low luminance[cite: 9, 10].
-*   **`comparacion_final.py`**: Main script to generate the comparative results table[cite: 1].
+*   **`robustness_stress_test.py`**: Logic for simulating blur, noise, and low luminance.
+*   **`image_degradation_evaluator.py`**: Main script to generate the comparative results table.
 
 ## Installation
 1. Clone this repository.
