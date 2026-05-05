@@ -14,8 +14,6 @@ This repository contains the source code for the study on AI vulnerability in sk
 3. Download the [HAM10000 dataset](https://doi.org/10.7910/DVN/DBW86T) and place it in the `data/` folder.
 
 ## Usage
-1. **Train models**: `python model_training.py`[cite: 4, 7].
-2. **Run comparison**: `python comparacion_final.py`[cite: 1].
+1. **Train models**: `python model_training.py`.
+2. **Run comparison**: `python comparacion_final.py`.
 
-## Citation
-If you find this work useful, please cite our Cureus publication.
