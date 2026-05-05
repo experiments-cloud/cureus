@@ -1,2 +1,21 @@
-# cureus
-Robustness analysis of ResNet-50 and MobileNetV2 in teledermatology. This repository evaluates AI performance under visual degradations (blur, noise, low light) using the HAM10000 dataset, highlighting the Accuracy Paradox and proposing a Quality Gate architecture for patient safety.
+# AI Robustness in Teledermatology: The Accuracy Paradox
+
+This repository contains the source code for the study on AI vulnerability in skin cancer screening under real-world photographic conditions.
+
+## Project Structure
+*   **`dataset_loader.py`**: Custom PyTorch Dataset class for HAM10000.
+*   **`model_training.py`**: Fine-tuning script for ResNet-50 and MobileNetV2.
+*   **`evaluacion_degradacion.py`**: Logic for simulating blur, noise, and low luminance[cite: 9, 10].
+*   **`comparacion_final.py`**: Main script to generate the comparative results table[cite: 1].
+
+## Installation
+1. Clone this repository.
+2. Install dependencies: `pip install -r requirements.txt`
+3. Download the [HAM10000 dataset](https://doi.org/10.7910/DVN/DBW86T) and place it in the `data/` folder.
+
+## Usage
+1. **Train models**: `python model_training.py`[cite: 4, 7].
+2. **Run comparison**: `python comparacion_final.py`[cite: 1].
+
+## Citation
+If you find this work useful, please cite our Cureus publication.
