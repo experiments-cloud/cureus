@@ -5,7 +5,6 @@ This module provides a robust data loading pipeline for the HAM10000 dataset,
 standardizing the 7 skin lesion categories and applying necessary transforms
 for deep learning architectures like ResNet-50 and MobileNetV2.
 
-Author: [Tu Nombre/Laboratorio]
 Date: 2026
 """
 
@@ -36,7 +35,7 @@ class HAM10000Dataset(Dataset):
         Args:
             csv_file (string): Path to the metadata CSV file.
             root_dir (string): Directory containing all dataset images.
-            transform (callable, optional): PyTorch transforms to apply to images[cite: 2, 8].
+            transform (callable, optional): PyTorch transforms to apply to images.
         """
         if not os.path.exists(csv_file):
             raise FileNotFoundError(f"Metadata file not found at: {csv_file}")
@@ -49,7 +48,7 @@ class HAM10000Dataset(Dataset):
         self.metadata['target'] = self.metadata['dx'].map(LESION_TYPE_DICT)
 
     def __len__(self):
-        """Returns the total number of samples in the dataset[cite: 2, 8]."""
+        """Returns the total number of samples in the dataset."""
         return len(self.metadata)
 
     def __getitem__(self, idx):
@@ -103,7 +102,7 @@ if __name__ == "__main__":
         images, labels = next(iter(loader))
         
         print(f"Status: Success!")
-        print(f"Batch Image Shape: {images.shape}")  # Should be [32, 3, 224, 224][cite: 2, 8]
+        print(f"Batch Image Shape: {images.shape}")  # Should be [32, 3, 224, 224]
         print(f"Batch Label Shape: {labels.shape}")
         print(f"Sample Targets: {labels[:5].tolist()}")
         
