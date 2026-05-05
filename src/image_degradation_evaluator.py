@@ -124,7 +124,7 @@ if __name__ == '__main__':
     # Final Table Generation[cite: 1]
     df_results = pd.DataFrame(results)
     print("\n" + "="*65)
-    print("FINAL RESULTS TABLE FOR CUREUS MANUSCRIPT")
+    print("RESULTS")
     print("="*65)
     print(df_results.to_string(index=False))
     df_results.to_csv('final_comparison_results.csv', index=False)
