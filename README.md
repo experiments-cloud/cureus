@@ -1,4 +1,4 @@
-# AI Robustness in Teledermatology: The Accuracy Paradox
+# Impact of Image Degradation on Melanoma Detection by AI: A Patient Safety Perspective
 
 This repository contains the source code for the study on AI vulnerability in skin cancer screening under real-world photographic conditions.
 
